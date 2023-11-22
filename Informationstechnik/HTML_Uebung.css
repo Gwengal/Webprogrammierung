@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+.text{
+    color: white;
+}
+#top{
+    margin-bottom: 30px;
+}
+#bottom{
+    margin-top: 30px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+    color: purple;
+}
