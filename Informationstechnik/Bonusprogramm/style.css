@@ -1,0 +1,17 @@
+#title{
+    background-color: lightcoral;
+    margin: 0;
+    padding-right: 10px;
+}
+#leftMenue{
+    background-color: greenyellow;
+    float: left;
+    padding-right: auto;
+}
+#rightOutput{
+    background-color: lightgrey;
+    float: left;
+}
+h3{
+    float: inherit;
+}
