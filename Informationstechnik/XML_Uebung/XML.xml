@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<book>
+    <author>Joachim Schnell</author>
+    <title>Wie funktioniert XML</title>
+    <caption>Fangen Sie damit lieber nicht an. Ist a nightmare...</caption>
+    <edition>1.1</edition>
+    <numPages>300</numPages>
+    <language>Deutsch</language>
+    <publisher>EnteGut</publisher>
+    <yearPublic>2020</yearPublic>
+    <price>20,99€</price>
+    <isbn>123.123</isbn>
+    <number>1</number>
+</book>
