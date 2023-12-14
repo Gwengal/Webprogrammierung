@@ -1,17 +1,49 @@
+div #mainContainer{
+    width: 100%;
+}
 #title{
     background-color: lightcoral;
     margin: 0;
     padding-right: 10px;
 }
-#leftMenue{
-    background-color: greenyellow;
+div #leftMenue{
+    background-color: rgb(131, 225, 16);
     float: left;
-    padding-right: auto;
+    width: 12%;
+    height: 603.542px;
+    align-content: stretch;
 }
-#rightOutput{
+div #rightOutput{
     background-color: lightgrey;
     float: left;
+    width: 88%;
+}
+div #rightOutput h1{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+div #rightOutput #leftContainer{
+    width: 50%;
+    float: left;
+} 
+div #rightOutput #rightContainer{
+    width: 50%;
+    float: right;
+}
+div #rightOutput .rightSite{
+    padding-left: 1%;
+}
+div #rightOutput p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#price{
+    font-weight: bold;
 }
 h3{
-    float: inherit;
+    margin-left: 10%;
+    margin-bottom: 0%
+}
+img{
+    height: 520px;
 }
