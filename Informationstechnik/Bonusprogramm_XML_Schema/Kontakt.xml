@@ -12,13 +12,13 @@
         <xs:restriction base="xs:string">
             <!-- Muster für Handynummer 
             - 0: Muss mit der Zahl 0 beginnen
-            - (1[5-7]|[1-9]): entweder oder:
-            -> 1[5-7]: Zahl muss mit einer 1 beginnen und auf diese folgt eine Zahle zwischen 5-7
+            - (1[5-7]\d{1}|[1-9]): entweder oder:
+            -> 1[5-7]\d{1}: Zahl muss mit einer 1 beginnen und auf diese folgt eine Zahle zwischen 5-7 und darauf muss noch eine Zahl folgen
             -> [1-9]: Eine Zahl zwischen 1-9
             - \s?: optional kann ein Leerzeichen vorkommen
             - \d{8}: Es müssen genau 8 Zahlen folgen 
             -->
-            <xs:pattern value="0(1[5-7]|[1-9])\s?\d{8}" />
+            <xs:pattern value="0(1[5-7]\d{1}|[1-9])\s?\d{8}" />
             <!-- Muster für Festnetznummern
             - 0: Muss mit der Zahl 0 beginnen
             - [2-9]: Nächste Zahl muss eine 2 bis 9 sein
