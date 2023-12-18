@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Kontakte>
+  <Kontakt id="1">
+    <Name vor="Tobias" nach="Hauser"/>
+    <Telefon typ="mobil">0179 22334455</Telefon>
+    <Adresse><Strasse>Teststr. 10</Strasse>
+        <PLZ>95028</PLZ>  <Ort>Hof</Ort>
+    </Adresse>
+  </Kontakt>
+</Kontakte>
