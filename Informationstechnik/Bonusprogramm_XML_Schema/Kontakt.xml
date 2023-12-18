@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Typ-Definition für DE-PLZ  "\d{5}" = genau 5 Ziffern werden erwartet -->
+    <xs:simpleType name="PLZType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{5}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Typ-Definition für Telefon -->
+    <xs:simpleType name="TelTyp">
+        <xs:restriction base="xs:string">
+            <!-- Muster für Handynummer 
+            - 0: Muss mit der Zahl 0 beginnen
+            - (1[5-7]|[1-9]): entweder oder:
+            -> 1[5-7]: Zahl muss mit einer 1 beginnen und auf diese folgt eine Zahle zwischen 5-7
+            -> [1-9]: Eine Zahl zwischen 1-9
+            - \s?: optional kann ein Leerzeichen vorkommen
+            - \d{8}: Es müssen genau 8 Zahlen folgen 
+            -->
+            <xs:pattern value="0(1[5-7]|[1-9])\s?\d{8}" />
+            <!-- Muster für Festnetznummern
+            - 0: Muss mit der Zahl 0 beginnen
+            - [2-9]: Nächste Zahl muss eine 2 bis 9 sein
+            - \d{1,4}: beliebig viele Zahlen von 1-4 folgen
+            - \s? optional kann ein Leerzeichen vorkommen
+            - \d{5,10}: beliebig viele Zahlen von 5-10 folgen -->
+            <xs:pattern value="0[2-9]\d{1,4}\s?\d{5,10}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definition Hauptelement Kontakte -->
+    <xs:element name="Kontakte">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Definition Element Kontakt -->
+                <xs:element name="Kontakt">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Definition Element Name -->
+                            <xs:element name="Name">
+                                <xs:complexType>
+                                    <xs:attribute name="vor" type="xs:string" />
+                                    <xs:attribute name="nach" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- Definition Element Telefon -->
+                            <xs:element name="Telefon">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="TelTyp">
+                                            <xs:attribute name="typ" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- Definition Element Adresse -->
+                            <xs:element name="Adresse">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!-- Definition Element Strasse -->
+                                        <xs:element name="Strasse" type="xs:string" />
+                                        <!-- Definition Element PLZ -->
+                                        <xs:element name="PLZ" type="PLZType" />
+                                        <!-- Definition Element Ort -->
+                                        <xs:element name="Ort" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:int" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
