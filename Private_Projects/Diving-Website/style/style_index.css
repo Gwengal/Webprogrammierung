@@ -1,0 +1,96 @@
+#socialmedia {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #fff 0%, #d7e1ec);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper {
+    display: inline-block;
+    margin: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px #000;
+    transition: all 0.3s ease-out;
+}
+
+.button .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.button .icon i {
+    font-size: 25px;
+    transition: all 0.3s ease-out;
+}
+
+.button span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper:nth-child(1) .button:hover .icon {
+    background: #4267b2;
+}
+
+.wrapper:nth-child(2) .button:hover .icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.wrapper:nth-child(3) .button:hover .icon {
+    background: #ff0000;
+}
+
+.wrapper:nth-child(1) .button:hover .icon i,
+.wrapper:nth-child(1) .button:hover span {
+    color: #fff;
+}
+
+.wrapper:nth-child(2) .button:hover .icon i,
+.wrapper:nth-child(2) .button:hover span {
+    color: #fff;
+}
+
+.wrapper:nth-child(3) .button:hover .icon i,
+.wrapper:nth-child(3) .button:hover span {
+    color: #fff;
+}
+
+.wrapper:nth-child(1) .button span {
+    color: #4267b2;
+}
+
+.wrapper:nth-child(2) .button span {
+    color: #e13060;
+}
+
+.wrapper:nth-child(3) .button span {
+    color: #ff0000;
+}
