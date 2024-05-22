@@ -1,0 +1,29 @@
+h1 {
+    display: inline-block;
+    position: absolute;
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img#logo {
+    position: relative;
+    top: 0;
+    width: 3%;
+}
+
+div {
+    margin-left: 1%;
+}
+
+h2 {
+    color: chocolate;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 0%;
+}
+
+ul {
+    font-weight: bold;
+}

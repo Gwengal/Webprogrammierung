@@ -1,0 +1,72 @@
+div#grid>div {
+    background-color: #444;
+    color: #fff;
+    padding: 1em;
+}
+
+@media (orientation: portrait) {
+    #grid {
+        display: grid;
+        grid-template-areas:
+            "title stats"
+            "score stats"
+            "board board"
+            "ctrls ctrls";
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    #title {
+        grid-area: title
+    }
+
+    #stats {
+        grid-area: stats;
+    }
+
+    #score {
+        grid-area: score;
+    }
+
+    #board {
+        grid-area: board;
+    }
+
+    #ctrls {
+        grid-area: ctrls;
+    }
+}
+
+@media (orientation: landscape) {
+    #grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 1em;
+    }
+
+    #title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #stats {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #score {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #board {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    #ctrls {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}

@@ -1,0 +1,32 @@
+header {
+	background-color: rgb(23, 23, 137);
+	align-content: stretch;
+}
+
+header > h1 {
+	color: yellow;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 0% 10% 5% 0%;
+}
+
+header > img {
+	float: right;
+	width: 130px;
+}
+
+footer {
+	position: fixed;
+	background-color: rgb(23, 23, 137);
+}
+
+footer > h1 {
+	color: yellow;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 0% 10% 5% 0%;
+}
+
+footer > p {
+	color: white;
+}
