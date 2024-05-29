@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    color: #4d4d4d;
+}
+
+#kontakt {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}

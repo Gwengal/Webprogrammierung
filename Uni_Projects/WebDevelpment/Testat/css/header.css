@@ -1,0 +1,32 @@
+/* CSS Einstellungen für Laptop-Screens */
+header {
+    display: flex;
+    background-color: #f2f2f2;
+    border-bottom: 20px solid #be272e;
+}
+
+@media(min-width: 1000px) and (max-width: 1440px) {
+    header {
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    header>img {
+        margin-right: 50px;
+    }
+
+    header>a {
+        padding: 10px;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    header>a:hover {
+        background-color: #be272e;
+        color: #fff;
+    }
+}
