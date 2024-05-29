@@ -1,0 +1,18 @@
+@media print {
+    html {
+        filter: grayscale(100%);
+      }
+
+    body{
+        font-family: Arial, sans-serif;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+}

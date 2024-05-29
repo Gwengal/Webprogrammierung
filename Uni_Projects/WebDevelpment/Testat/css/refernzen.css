@@ -1,0 +1,55 @@
+@media(min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #leftContainer {
+        grid-column: 1;
+    }
+
+    #midContainer {
+        grid-column: 2;
+    }
+
+    #rightContainer {
+        grid-column: 3;
+    }
+}
+
+/* Wenn Screen < als 1000 px dann den Container mit dem Text im Bild ausblenden */
+@media (max-width: 1000px) {
+    #leftContainer, #rightContainer {
+        display: none;
+    }
+}
+
+#leftContainer,
+#rightContainer {
+    background-color: #fff;
+}
+
+#midContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#img {
+    border-bottom: 20px solid #FEA8A8;
+}
+
+#img img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+#lastPoint {
+    background-color: #7F1A15;
+    margin: 5px 0;
+    color: #FFAAAA;
+    padding: 10px;
+}
