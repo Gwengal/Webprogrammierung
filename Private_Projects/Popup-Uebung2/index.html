@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <style>
+        /* Stil für das Overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Halbtransparentes Overlay */
+            z-index: 1000; /* Über allen anderen Inhalten */
+        }
+
+        /* Stil für das Popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001; /* Über dem Overlay */
+        }
+
+        /* Stil für die Eingabefelder im Popup */
+        .popup input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="openPopup()">Popup öffnen</button>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="popup">
+    <h2>Eingabefelder</h2>
+    <input type="text" placeholder="Feld 1">
+    <input type="text" placeholder="Feld 2">
+    <input type="text" placeholder="Feld 3">
+    <input type="text" placeholder="Feld 4">
+    <button onclick="closePopup()">Schließen</button>
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
