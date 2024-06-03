@@ -1,5 +1,8 @@
 article {
+    /* Innenlinienabstand von 10px setzen */
     padding: 10px;
-    background-color: #7F1A15;;
+    /* Hintergrundfarbe setzen */
+    background-color: #7F1A15;
+    /* Textfarbe setzen */
     color: #FFAAAA;
 }

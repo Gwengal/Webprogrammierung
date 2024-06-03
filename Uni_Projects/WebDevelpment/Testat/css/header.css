@@ -1,36 +1,54 @@
 header {
+    /* flexibles Layout für den Container */
     display: flex;
+    /* Zeilenumbruch möglich */
     flex-wrap: wrap;
+    /* Hintergrundfarbe setzen */
     background-color: #7F1A15;
+    /* Untere Border-Linie setzen mit 20px */
     border-bottom: 20px solid #FEA8A8;
+    /* Items (a, img) auf der unteren Linie des Containers ausrichten */
     align-items: baseline;
 }
 
+/* Für alle a-Elemente direkt um dem header-Element */
 header>a {
     padding: 10px;
+    /* Border-Linien (links, rechts, unten) setzen */
     border-left: 1px solid #AA3E38;
     border-right: 1px solid #AA3E38;
     border-bottom: 1px solid #AA3E38;
+    /* Unterstrich entfernen */
     text-decoration: none;
+    /* Wenn sich die Maus auf dem Element befindet, dieser das Symbol
+        eines Pointers zuweisen */
     cursor: pointer;
+    /* Schriftfarbe setzen */
     color: #FFAAAA;
 }
 
+/* Wenn die Maus sich auf dem Element befindet, wird diese CSS-Eigenschaft zugewiesen */
 header>a:hover {
+    /* Hintergrundfarbe setzen */
     background-color: #D7736E;
+    /* Schriftfarbe setzen */
     color: #330300;
 }
 
+/* Für alle img-Elemente direkt unter dem header-Element */
 header>img {
+    /* Außenlinienabstand von rechts mit 50px */
     margin-right: 50px;
 }
 
+/* Bei einem Screen < 1000px werden die Elemente im Header am Start ausgerichtet */
 @media(max-width: 1000px) {
     header {
         justify-content: start;
     }
 }
 
+/* Bei einem Screen > 1000px werden die Elemente im Header in der Mitte ausgerichtet */
 @media(min-width: 1000px) {
     header {
         justify-content: center;

@@ -1,55 +1,74 @@
+/* Eigenschaft übernehmen für Screen > 1000px */
 @media(min-width: 1000px) {
     main {
+        /* Elemente im Grid-Format ausrichten */
         display: grid;
+        /* Grid hat 3 Spalten */
         grid-template-columns: 1fr 3fr 1fr;
+        /* Eine Zeile */
         grid-template-rows: auto;
+        /* Breite und Höhe sollen komplett verwendet werden */
         width: 100%;
         height: 100%;
+        /* Außenlinienabstand von 0 */
         margin: 0;
     }
 
+    /* 1 Grid Spalte */
     #leftContainer {
         grid-column: 1;
     }
 
+    /* 2 Grid Spalte */
     #midContainer {
         grid-column: 2;
     }
 
+    /* 3 Grid Spalte */
     #rightContainer {
         grid-column: 3;
     }
 }
 
-/* Wenn Screen < als 1000 px dann den Container mit dem Text im Bild ausblenden */
+/* Wenn Screen < 1000 px dann sollen die Container ausgeblendet werden */
 @media (max-width: 1000px) {
     #leftContainer, #rightContainer {
         display: none;
     }
 }
 
+/* Hintergrundfarbe für die Container setzen */
 #leftContainer,
 #rightContainer {
     background-color: #fff;
 }
 
 #midContainer {
+    /* Flexibles Layout setzen */
     display: flex;
+    /* Je neuem Element eine neue Zeile anfangen */
     flex-direction: column;
 }
 
 #img {
+    /* BildContainer soll unten eine Border mit 20px bekommen */
     border-bottom: 20px solid #FEA8A8;
 }
 
 #img img {
+    /* Bild soll 100% des Containers einnehmen */
     width: 100%;
+    /* Außenlinienabstand: Top+Bottom 5px und Left+Right 0 */
     margin: 5px 0;
 }
 
 #lastPoint {
+    /* Hintergrundfarbe setzen */
     background-color: #7F1A15;
+    /* Außenlinienabstand: Top+Bottom 5px und Left+Right 0 */
     margin: 5px 0;
+    /* Textfarbe setzen */
     color: #FFAAAA;
+    /* Innenlinienabstand von 10px setzen */
     padding: 10px;
 }

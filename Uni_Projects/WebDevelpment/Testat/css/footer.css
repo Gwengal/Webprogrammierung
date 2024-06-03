@@ -1,66 +1,104 @@
 footer {
+    /* Am Kopf des Elements wird eine Border mit 20px angebracht */
     border-top: 20px solid #FEA8A8;
+    /* Flexibles Design innerhalb dieses Containers */
     display: flex;
+    /* Elemente werden horizontal in der Mitte angezeigt */
     justify-content: center;
     align-items: flex-start;
+    /* Zeilenumbruch möglich */
     flex-wrap: wrap;
+    /* Hintergrundfarbe setzen */
     background-color: #7F1A15;
+    /* Farbe setzen */
     color: #000;
+    /* Innenlinienabstand von 30px */
     padding: 30px;
+    /* Hier unnötig
+        - 0 (Horizontal) = Schatten befindet sich direkt unterm Element
+        - 2px (Vertikal) = Schatten liegt 2px unter dem Element
+        - 4px = Schatten hat eine Unschärfe von 4px */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer div {
+    /* grow und sink haben den Wert 1 */
     flex: 1;
+    /* Außenlinienabstand von 15px */
     margin: 15px;
 }
 
 footer div h3 {
+    /* Textfarbe setzen */
     color: #801515;
-    text-decoration: underline;
 }
 
 #kontakt {
+    /* Innenlinienabstand von 20px */
     padding: 20px;
+    /* Die Ecken der Kante werden um 8px abgerundet */
     border-radius: 8px;
+    /* Hintergrundfarbe wird auf weiß gesetzt */
     background-color: #fff;
 }
 
 #kontakt ul {
+    /* Liste soll nicht als Liste angezeigt werden */
     list-style-type: none;
+    /* Kein Innenlinienabstand */
     padding: 0;
+    /* Kein Außenlinienabstand */
     margin: 0;
 }
 
 #kontakt ul li {
+    /* Elemente der Liste sollen einen Außenlinienabstand (unten) von 10px haben */
     margin-bottom: 10px;
 }
 
 #kontakt ul li a {
+    /* Text dick darstellen */
     font-weight: bold;
+    /* Schriftfarbe setzen */
     color: #333;
+    /* Kein Unterstrich */
     text-decoration: none;
+    /* Übergang für den Farbwechsel einbauen
+        - 0.3s dauert der Farbwechsel
+        - ease = Sanfter Übergang (Anfang beschleunigt und Endbewegung eher langsamer) */
     transition: color 0.3s ease;
 }
 
 #kontakt ul li a:hover {
+    /* Textfarbe beim Drüber-hover setzen */
     color: #D7736E;
 }
 
 #socialLinks {
+    /* Innenlinienabstand von 20px */
     padding: 20px;
+    /* Ecken der Border werden um 8px abgerundet */
     border-radius: 8px;
+    /* Hintergrundfarbe setzen */
     background-color: #f2f2f2;
 }
 
 #socialLinks i {
+    /* Symbol für Mauszeiger verändern */
     cursor: pointer;
+    /* Schriftgröße setzen */
     font-size: 28px; 
+    /* Schriftfarbe setzen */
     color: #550000;
+    /* Übergang für den Farbwechsel einbauen */
     transition: color 0.3s ease;
+    /* Außenlinienabstand
+        - Top/Bottom = 0
+        - Right/left = 15px */
     margin: 0 15px;
 }
 
 #socialLinks i:hover {
+    /* Beim Drüber-hover Schriftfarbe anpassen */
     color: #D7736E;
 }

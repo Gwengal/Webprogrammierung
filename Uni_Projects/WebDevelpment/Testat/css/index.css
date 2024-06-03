@@ -1,28 +1,40 @@
 main {
+    /* Elemente innerhalb des Containers im Grid-Schema aufbauen */
     display: grid;
+    /* Grid-Schema soll aus 4 Zeilen bestehen */
     grid-template-rows: auto auto auto auto;
 }
 
 #imgContainer {
+    /* Behalten ihre Position bei und überlappen keine anderen Objekte */
     position: relative;
     display: inline-block;
+    /* Untere Border ist 20px groß */
     border-bottom: 20px solid #FEA8A8;
-    grid-row: 1;
 }
 
 #imgContainer img {
+    /* Bild soll 100% des Containers annehmen (in der Breite) */
     width: 100%;
 }
 
 #imgContainer article {
+    /* Können andere Elemente überlappen */
     position: absolute;
+    /* Startpunkt für das Element
+        - 0px von unten
+        - 50px von links */
     bottom: 0;
     left: 50px;
+    /* Hintergrundfarbe setzen */
     background-color: rgba(255, 255, 255, 0.1);
+    /* Border setzen */
     border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Innenlinienabstand setzen */
     padding: 20px;
 }
 
+/* Element wird ausgeblendet, wenn die Screen-Größe < 1000px in der Breite ist */
 @media (max-width: 1000px) {
     #imgContainer article {
         visibility: hidden;
@@ -30,43 +42,65 @@ main {
 }
 
 #partner {
+    /* flexibles Layout */
     display: flex;
+    /* Je neues Element wird eine neue Zeile angefangen */
     flex-direction: column;
+    /* Items werden mittig ausgerichtet */
     align-items: center;
+    /* Schriftfarbe setzen */
     color: #FFAAAA;
+    /* Hintergrundfarbe setzen */
     background-color: #7F1A15;
+    /* Untere Border-Line mit 20px festlegen */
     border-bottom: 20px solid #FEA8A8;
+    /* Außenlinienabstand im Top-Bereich von 5px */
     margin-top: 5px;
 }
 
 #partner #imgPartner {
+    /* flexibles Layout */
     display: flex;
+    /* Zeilenumbruch möglich */
     flex-wrap: wrap;
 }
 
 #partner #imgPartner img {
+    /* Cursor-Symbol ändern */
     cursor: pointer;
+    /* Außenlinienabstand von 5px */
     margin: 5px;
+    /* Border mit 5px setzen */
     border: 5px solid #FFAAAA;
-    width: auto; /* Add this line to maintain aspect ratio */
 }
 
 #selectline {
+    /* Flexibles Layout */
     display: flex;
+    /* Je neues Element ein Zeilenumbruch */
     flex-direction: column;
+    /* Items mittig ausrichten */
     align-items: center;
+    /* Text mittig ausrichten */
     text-align: center;
+    /* Textfarbe setzen */
     color: #FFAAAA;
+    /* Hintergrundfarbe setzen */
     background-color: #7F1A15;
+    /* Außenlinienabstand von 5px setzen (Top-Bereich) */
     margin-top: 5px;
 }
 
 #selectline #imgSelectline {
+    /* Flexibles Layout */
     display: flex;
+    /* Zeilenumbruch möglich */
     flex-wrap: wrap;
 }
 
 #selectline #imgSelectline img {
+    /* Symbol für Maus anpassen */
     cursor: pointer;
+    /* Außenlinienabstand von 5px setzen */
     margin: 5px;
 }

@@ -1,18 +1,26 @@
+/* CSS-Eigenschaft, wenn die Seite gedruckt werden soll */
 @media print {
+    /* Alle Elemente innerhalb des HTML-Tags bekommen einen Grau-Filter */
     html {
         filter: grayscale(100%);
-      }
+    }
 
-    body{
+    /* Schriftart auf Arial setzen, wenn diese nicht verfügbar ist eine 
+        nicht Serife Schrift verwenden */
+    body {
         font-family: Arial, sans-serif;
     }
 
-    .no-print {
+    /* Elemente ausblenden, die die Klasse beinhalten */
+    .no-print { 
         display: none;
     }
 
+    /* Stil für Druckseiten festlegen */
     @page {
+        /* Seite soll im A4-Format gedruckt werden */
         size: A4;
+        /* Außenlinienabstand von 1cm */
         margin: 1cm;
     }
 }

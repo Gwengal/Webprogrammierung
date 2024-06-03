@@ -1,10 +1,20 @@
 body {
+    /* Seitenabstand (Top, Bottom, Right, Left) ist auf 0. 
+       -> Kein Seitenabstand  */
     margin: 0;
+    /* Flexibles Layout für diesen Container aktiv schalten */
     display: flex;
+    /* Jedes neue Element (in diesem Container) wird in einer neuen
+       Zeile gespeichert */
     flex-direction: column;
+    /* Schriftart für alles vorgeben, was sich im Container 'Body'
+       befindet. Wenn 'Roboto' nicht verfügbar ist, wird eine andere 
+       'sans-serif' Schriftart verwendet (die sich auf dem System des 
+       Benutzers befindet) */
     font-family: 'Roboto', sans-serif;
 }
 
+/* Für alle Überschriften Unterstriche hinzufügen */
 h1,
 h2,
 h3,
@@ -16,55 +26,95 @@ h6 {
 
 #boxContainer {
     display: flex;
+    /* Elemente in diesem Container in der Mitte anzeigen
+       -> Horizontale Achse */
     justify-content: center;
+    /* Sollte kein Platz vorhanden sein, wird umgebrochen */
     flex-wrap: wrap;
+    /* 20px dicken Strich am Ende des Containers anzeigen */
     border-bottom: 20px solid #FEA8A8;
 }
 
+/* Für alle Elemente direkt unter dem diesem Container */
 #boxContainer > div {
+    /* Beschreibung:
+        - flex-grow: Bestimmt um wie vel das Flex-Item wachsen darf 
+            -> wenn alle Items den gleichen Wert besitzen, teil sich der 
+                Platz gleichmäßig auf 
+        - flex-shrink: Bestimmt um wie viel das Flex-Item schrumpfen darf
+            -> 0 = Items dürfen nicht schrumpfen auch wenn der Container kleiner
+                ist
+        - flex-basis: Damit kann man die Basis-/Min-Größe vorgeben*/
     flex: 1 0 30%;
+    /* Text wird horizontal mittig im Container angezeigt */
     text-align: center;
+    /* Hintergrundfarbe für den Container setzen */
     background-color: #7F1A15;
+    /* Schriftfarbe für den Container setzen */
     color: #FFAAAA;
+    /* Seitenabstand zu anderen Elementen setzen */
     margin: 5px;
 }
 
+/* CSS-Eigenschaft wird nur dann zugewiesen, wenn der User sich mit der Maus
+    über dem Element befindet */
 #boxContainer > div:hover {
+    /* Schriftfarbe anpassen */
     color: #330300;
+    /* Hintergrundfarbe anpassen */
     background-color: #D7736E;
 }
 
+/* CSS-Eigenschaft für alle DIV-Container innerhalb des '#boxContainer' */
 #boxContainer div {
+    /* Maximalbreite für die Container innerhalb setzen.
+        Maximalbreite entspricht dem verfügbaren Platz des oberen 
+        Containers. */
     max-width: 100%;
+    /* Innenlinien-Abstand/Innenabstand
+        Inhalt des Elementes um 10px vom Rand des Elementes entfernt */
     padding: 10px;
+    /* Wenn sich die Maus über dem Element befindet, wird das Symbol zu
+        einem 'Pointer' geändert */
     cursor: pointer;
 }
 
+/* Eigenschaft wird für alle I-Elemente innerhalb DIV-Elementen, welche 
+    sich wiederum im 'boxContainer' befinden angewandt */
 #boxContainer div i {
     display: block;
+    /* Schriftgröße von 30px vorgeben */
     font-size: 30px;
+    /* Innenlinien-Abstand von 10px */
     padding: 10px;
 }
 
 #boxContainer div h4 {
+    /* Text am Anfang des Containers ausgerichtet */
     text-align: start;
+    /* Kein Außenlinienabstand */
     margin: 0;
+    /* Textfarbe vorgeben */
     color: #fff;
-    text-decoration: underline;
 }
 
 #boxContainer div h5 {
+    /* Text am Anfang des Containers ausrichten */
     text-align: start;
+    /* Kein Außenlinienabstand */
     margin: 0;
 }
 
 #boxContainer div p {
+    /* Text am Anfang des Containers ausrichten */
     text-align: start;
-    margin: 0; /* zusammengefasst für h4, h5, h6 */
+    /* Kein Außenlinienabstand*/
+    margin: 0; 
+    /* An der oberen Kante gibt es einen Abstand von 5px */
     margin-top: 5px;
 }
 
-/* Einstellung für Laptop-Screens */
+/* Einstellung für Screens mit einer min. Breite von 1000px */
 @media (min-width: 1000px) {
     body {
         font-size: 20px;
