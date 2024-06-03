@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+}
+
+#boxContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 20px solid #FEA8A8;
+}
+
+#boxContainer > div {
+    flex: 1 0 30%;
+    text-align: center;
+    background-color: #7F1A15;
+    color: #FFAAAA;
+    margin: 5px;
+}
+
+#boxContainer > div:hover {
+    color: #330300;
+    background-color: #D7736E;
+}
+
+#boxContainer div {
+    max-width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#boxContainer div i {
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#boxContainer div h4 {
+    text-align: start;
+    margin: 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
+#boxContainer div h5 {
+    text-align: start;
+    margin: 0;
+}
+
+#boxContainer div p {
+    text-align: start;
+    margin: 0; /* zusammengefasst für h4, h5, h6 */
+    margin-top: 5px;
+}
+
+/* Einstellung für Laptop-Screens */
+@media (min-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 34px;
+        margin-bottom: 14px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    h6 {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/print.css">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
     <main>
         <div id="imgContainer" class="main-grid-items">
             <img src="img/index/banner-cotec-sl-partner-2024.jpg" alt="SelectLine Partner 2024">
-            <article>
+            <article class="no-print">
                 <h3>SelectLine Partner 2024</h3>
                 <p>
                     <strong>Seit 2001</strong> stehen wir als SelectLine Partner für sie imt unseren Kompetenzen zur
@@ -65,23 +67,51 @@
                 </p>
             </div>
         </div>
+
+        <section id="partner">
+            <h4>Unsere Partner</h4>
+            <div id="imgPartner">
+                <img src="img/index/partner/Logohp2.png" alt="logo hp">
+                <img src="img/index/partner/logo-docuvita.png" alt="logo docuvita">
+                <img src="img/index/partner/Logos-Lancom.png" alt="logo lancom">
+                <img src="img/index/partner/Logos-shipexpert.png" alt="logo shipxpert">
+                <img src="img/index/partner/logo-venabo.png" alt="logo venabo">
+            </div>
+            <p>Kompetent in betriebswirtschaftlichen Systemen</p>
+            <img src="img/index/partner/LogoSelectLIneRGB.png" alt="Logo SelectLine">
+        </section>
+
+        <div id="selectline">
+            <p>
+                Unser Partner SelectLine, Hersteller der leistungsstarken <br> gleichnamigen kaufmännischen Software
+                bescheinigt uns mit der Verleihung der
+                <br><strong>Produktkompetenzen 2024</strong>
+            </p>
+            <div id="imgSelectline">
+                <img src="img/index/selectline/Komeptenz-Warenwirtschaft-SL-2024.png"
+                    alt="Komeptenz-Warenwirtschaft-SL">
+                <img src="img/index/selectline/Komeptenz-Rechnungswesen-SL-2024.png" alt="Komeptenz-Rechnungswesen-SL">
+                <img src="img/index/selectline/Komeptenz-Produktion-SL-2024.png" alt="Komeptenz-Produktion-SL">
+            </div>
+        </div>
     </main>
+
     <footer>
         <div id="kontakt">
-            <h4>Kontakt</h4>
+            <h3>Kontakt</h3>
             <ul>
                 <li>Wetzelsgrüner Str. 21</li>
                 <li>08233 Treuen (Vogtland, Sachsen)</li>
-                <li><a href="tel:+49 37468 668-0">Tel: +49 37468 668-0</a></li>
-                <li><a href="tel:+49 37468 668-66">Tel: +49 37468 668-66</a></li>
+                <li><a href="tel:+4937468668-0">Tel: +49 37468 668-0</a></li>
+                <li><a href="tel:+4937468668-66">Tel: +49 37468 668-66</a></li>
             </ul>
         </div>
 
-        <div id="socialLinks">
-            <h4>Social Links</h4>
+        <div id="socialLinks" class="no-print">
+            <h3>Social Links</h3>
             <a href="https://www.facebook.com/cotec.it.systeme/" class="social-icon"><i
                     class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://x.com/#!/cotecitsysteme" class="social-icon"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 </body>

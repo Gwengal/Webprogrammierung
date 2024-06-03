@@ -1,32 +1,38 @@
-/* CSS Einstellungen für Laptop-Screens */
 header {
     display: flex;
-    background-color: #f2f2f2;
-    border-bottom: 20px solid #be272e;
+    flex-wrap: wrap;
+    background-color: #7F1A15;
+    border-bottom: 20px solid #FEA8A8;
+    align-items: baseline;
 }
 
-@media(min-width: 1000px) and (max-width: 1440px) {
+header>a {
+    padding: 10px;
+    border-left: 1px solid #AA3E38;
+    border-right: 1px solid #AA3E38;
+    border-bottom: 1px solid #AA3E38;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFAAAA;
+}
+
+header>a:hover {
+    background-color: #D7736E;
+    color: #330300;
+}
+
+header>img {
+    margin-right: 50px;
+}
+
+@media(max-width: 1000px) {
     header {
-        align-items: baseline;
+        justify-content: start;
+    }
+}
+
+@media(min-width: 1000px) {
+    header {
         justify-content: center;
-    }
-
-    header>img {
-        margin-right: 50px;
-    }
-
-    header>a {
-        padding: 10px;
-        border-left: 1px solid #ddd;
-        border-right: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        text-decoration: none;
-        cursor: pointer;
-        color: black;
-    }
-
-    header>a:hover {
-        background-color: #be272e;
-        color: #fff;
     }
 }
