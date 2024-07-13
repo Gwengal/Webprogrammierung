@@ -1,0 +1,37 @@
+1. Welche Elemente können innerhalb von Überschriften z.B. <h1> verwendet werden? Welche Einschränkung gilt für diese Elemente?
+    Innerhalb von Überschriften-Elementen (wie '<h1>', '<h2>', etc.) können folgende Inline-Elemente verwendet werden:
+        - <a>
+        - <strong> 
+        - <em> 
+        - <span>
+        - <img> 
+        - <abbr>
+        - <code>
+        - <small>
+        - <b>
+        - <i> 
+        - <br>
+    -> Verwendung sollte semantisch sinnvoll und zugänglich sein
+
+    Es können keine Block-Elemente (wie <div>, <p>, etc.) verwendet werden. 
+
+2. Welche weiteren Attribute besitzt das Element <a>? Welche Auswrikung haben diese Attriubte?
+    download        -   Gibt an, dass das Ziel heruntergeladen werden soll. 
+                        -> Verlinkte Datei wird nicht geöffnet, sondern wird runtergeladen.
+    href            -   URL, zu der der Link führt 
+                        -> Ziel, auf den der Link verweist
+    hreflang        -   Sprache des verlinkten Dokuments
+                        -> Angabe Sprache für das Zieldokuments. Nützlich für Suchmaschinen und Screenreader
+    media           -   Definiert Medienabfrage, die bestimmt, wann der Link angewendet wird. 
+                        -> Link nur aktiv für z.B. Druckmedien (media="print")
+    ping            -   Liste mit URLs. Bei Klick werden die Links angepingt    
+                        -> Sendet Benachrichtigung and die angegebenen URLs
+    referrerPolicy  -   Steuert, welche Informationen biem Verfolgenn von Links gesendet werden.
+                        -> Bestimmt, wie viele Referrer-Informationen an die Zielseite gesendet werden
+    rel             -   Beziehung zwischen aktuellen und dem verlinkten Dokument    
+                        -> 'noopener' u. 'noreferrer' verbessern Sicherheit und Leistung bei Links
+    target          -   Gibt an, wo das verlinkte Dokument geöffnet wird
+                        -> 'blank' öffnet im neuen Tab/Fenster
+                        -> '_slef' (Standard) öffnet Link im gleichen Tab/Fenster
+    type            -   Informiert über den Medientypen der verlinkten Ressource
+                        -> Wird vom Browser nicht beachtet      

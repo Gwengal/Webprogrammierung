@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe aus PP Seite22</title>
+    <!-- CSS in Datei integriert -->
+    <style type="text/css">
+        p {
+            color: red;
+            font-family: sans-serif;
+        }
+
+        p.red {
+            color: red;
+        }
+
+        p.green {
+            color: green;
+        }
+    </style>
+
+    <!-- CSS in separater Datei -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <!-- CSS direkt im Tag -->
+    <!-- <p style="background-color: red; border: 1px solid grey;"></p> -->
+    <p>
+        Lorem <em>ipsum</em> dolor sit amet, <a href="...">consetetur</a>
+    </p>
+
+    <p class="red green">At vero eos at accusam et justo duo dolores et ea rebum.</p>
+</body>
+
+</html>
+
+<!--    Aufgabe auf Seite 22 - Was passiert: 
+            Textfarbe ist rot und Textart ist 'sans-serif' 
+            ipsum wird kursiv dargestellt
+            consetetur wird wie ein Hyperlink dargestellt. Textfarbe blau -->
+
+<!--    Aufgabe auf Seite 25 - Was passiert: 
+            Die letzte definierte Regel im stylesheet wird für die betroffenen Elemente in
+            der HTML-Datei übernommen. D.h. der Text wird grün dargestellt. -->

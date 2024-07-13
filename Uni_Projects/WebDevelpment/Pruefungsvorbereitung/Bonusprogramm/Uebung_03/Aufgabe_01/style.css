@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: gray;
+    font-family: sans-serif;
+}
+
+h2,
+p {
+    color: rebeccapurple;
+}
+
+em {
+    font-style: italic;
+}
+
+#test {
+    border-bottom: 1px solid black;
+}
+
+.test:hover {
+    color: red;
+}

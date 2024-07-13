@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: yellow;
+            color: blue;
+        }
+
+        tbody tr:hover {
+            background-color: blueviolet;
+            color: wheat;
+            cursor: pointer;
+        }
+
+        thead {
+            background-color: aqua;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Zustandsübergänge</caption>
+        <thead>
+            <th>&delta;</th>
+            <th>0</th>
+            <th>1</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>p</td>
+                <td>q,s</td>
+                <td>q</td>
+            </tr>
+            <tr>
+                <td>q</td>
+                <td>q</td>
+                <td>q,r</td>
+            </tr>
+            <tr>
+                <td>r</td>
+                <td>s</td>
+                <td>p</td>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td>-</td>
+                <td>p</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

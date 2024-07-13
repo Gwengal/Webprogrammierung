@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout - Flexdirection</title>
+    <style type="text/css">
+        .flexbox {
+            display: flex;
+            background-color: lime;
+            justify-content: space-around;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .box {
+            background-color: darkmagenta;
+            text-align: center;
+            margin: 10px;
+            width: 100px;
+            font-size: 75px;
+            color: white;
+        }
+
+        .flexbox:nth-of-type(1) {
+            flex-direction: row;
+        }
+
+        .flexbox:nth-of-type(2) {
+            flex-direction: row-reverse;
+        }
+
+        .flexbox:nth-of-type(3) {
+            flex-direction: column;
+        }
+
+        .flexbox:nth-of-type(4) {
+            flex-direction: column-reverse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <div class="flexbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <div class="flexbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <div class="flexbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+
+</html>

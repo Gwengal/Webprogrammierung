@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     addParagraph();
 });
 
@@ -8,7 +8,7 @@ function addParagraph() {
 
     // P-Element im Body der HTML-Datei hinzufügen
     document.body.appendChild(p);
-    
+
     // Alert-Ausgabe: Text welcher im Paragraph steht
     alert(p.innerText);
     // Konsolen-Ausgabe: Text welcher im Paragraph steht

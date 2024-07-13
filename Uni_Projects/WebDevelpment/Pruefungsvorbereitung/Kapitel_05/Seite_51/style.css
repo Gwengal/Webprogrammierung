@@ -1,0 +1,76 @@
+#grid {
+    display: grid;
+    grid-gap: 1em;
+    width: 100%;
+    height: calc(100vh - 20px);
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    padding: 1em;
+}
+
+@media(orientation: landscape) {
+    #grid {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    #title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #board {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    #stats {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #score {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #controls {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+@media(orientation: portrait) {
+    #grid {
+        grid-template-areas:
+            "title stats"
+            "score stats"
+            "board board"
+            "controls controls";
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: auto 1fr;
+    }
+
+    #title {
+        grid-area: title;
+    }
+
+    #stats {
+        grid-area: stats;
+    }
+
+    #score {
+        grid-area: score;
+    }
+
+    #board {
+        grid-area: board;
+    }
+
+    #controls {
+        grid-area: controls;
+    }
+}

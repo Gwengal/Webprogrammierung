@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System mit 3 Spalten / CSS-Grid Demo</title>
+    <style type="text/css">
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+        }
+
+        .a {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .b {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+
+        .c {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .d {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            padding: 1em;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">Box a</div>
+        <div class="box b">Box b</div>
+        <div class="box c">Box c</div>
+        <div class="box d">Box d</div>
+    </div>
+</body>
+
+</html>

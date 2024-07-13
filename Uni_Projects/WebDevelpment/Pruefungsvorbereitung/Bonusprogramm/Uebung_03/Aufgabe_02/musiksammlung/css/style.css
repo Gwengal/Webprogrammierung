@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+header img {
+    max-width: 10%;
+}
+
+img {
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 75px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100wv - 20px);
+}
+
+main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+main a:hover {
+    background-color: lightslategray;
+    color: black;
+    cursor: pointer;
+}
+
+main ul {
+    padding: 0%;
+}
+
+main li {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: darkgoldenrod;
+    margin-bottom: 0px;
+}
+
+.alben>li {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
+
+.alben>li:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 10px solid black;
+    text-decoration: underline;
+}

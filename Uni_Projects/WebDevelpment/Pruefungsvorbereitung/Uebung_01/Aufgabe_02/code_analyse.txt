@@ -1,0 +1,15 @@
+1. Wie groß wird das Logo auf der Webseite dargestellt (in Pixel)?
+    250px x 140.566px
+
+2. Ändern Sie die Farbe der Überschrift 'Die Hochschule Hof'.
+    -> Erledigt.
+
+3. Was bedeutet die Angabe 'padding-left' bei dem Wort "EN" des Elements "li"?
+    Alle Elemente innerhalb des li-Tags haben einen Innen-Abstand von links zum Rand. 
+    -> Abstand hängt von dem angebenen Wert ab.
+
+4. Entfernen Sie das Bild "Zwei Studierende sitzen im B-Foyer der Hochschule Hof auf der Treppe" komplett. 
+    -> Erledigt.
+
+5. Fügen Sie dem Hauptmenüpunkt einen neuen Menüpunkt 'Webdev' hinzu.
+    -> Erledigt.

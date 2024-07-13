@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+button {
+    background-color: lime;
+    color: white;
+    font-size: 75px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+img {
+    width: 30%;
+}
