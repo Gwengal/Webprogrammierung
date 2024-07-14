@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griechenland</title>
+    <style>
+        .flag {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background: linear-gradient(to bottom, #0000FF 11.11%, #FFFFFF 11.11%, #FFFFFF 22.22%, #0000FF 22.22%, #0000FF 33.33%, #FFFFFF 33.33%, #FFFFFF 44.44%, #0000FF 44.44%, #0000FF 55.55%, #FFFFFF 55.55%, #FFFFFF 66.66%, #0000FF 66.66%, #0000FF 77.77%, #FFFFFF 77.77%, #FFFFFF 88.88%, #0000FF 88.88%, #0000FF 100%);
+        }
+
+        .cross {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 55.55%;
+            background-color: #0000FF;
+        }
+
+        .cross::before,
+        .cross::after {
+            content: '';
+            position: absolute;
+            background-color: #FFFFFF;
+        }
+
+        .cross::before {
+            top: 40%;
+            width: 100%;
+            height: 20%;
+        }
+
+        .cross::after {
+            left: 40%;
+            width: 20%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flag">
+        <div class="cross"></div>
+    </div>
+
+</body>
+
+</html>

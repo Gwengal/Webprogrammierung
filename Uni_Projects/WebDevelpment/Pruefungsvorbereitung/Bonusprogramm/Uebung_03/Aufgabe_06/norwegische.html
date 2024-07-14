@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwegische Flagge</title>
+    <style>
+        .flag {
+            position: relative;
+            width: 220px;
+            height: 160px;
+            background-color: #BA0C2F;
+            /* Rot */
+        }
+
+        .white-cross {
+            position: absolute;
+            width: 44px;
+            height: 160px;
+            background-color: #ffffff;
+            /* Weiß */
+            left: 55px;
+            /* Position des vertikalen weißen Streifens */
+            top: 0;
+        }
+
+        .white-cross::before {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 44px;
+            background-color: #ffffff;
+            /* Weiß */
+            left: -55px;
+            /* Um den horizontalen weißen Streifen auszurichten */
+            top: 58px;
+            /* Position des horizontalen weißen Streifens */
+        }
+
+        .blue-cross {
+            position: absolute;
+            width: 22px;
+            height: 160px;
+            background-color: #00205B;
+            /* Blau */
+            left: 11px;
+            /* Position des vertikalen blauen Streifens */
+            top: 0;
+        }
+
+        .blue-cross::before {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 22px;
+            background-color: #00205B;
+            /* Blau */
+            /* -55 - 11 = -66 */
+            left: -66px;
+            /* Um den horizontalen blauen Streifen auszurichten */
+            top: 69px;
+            /* Position des horizontalen blauen Streifens */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flag">
+        <div class="white-cross">
+            <div class="blue-cross"></div>
+        </div>
+    </div>
+</body>
+
+</html>
